@@ -1,0 +1,167 @@
+﻿<Window x:Class="Eleven.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Eleven"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="1000">
+
+    <Window.Resources>
+        <ResourceDictionary Source="Style.xaml"></ResourceDictionary>
+    </Window.Resources>
+    <Grid Background="#444444">
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="0" Grid.Column="0" >
+            <Grid.RowDefinitions>
+
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Image Source="/1.PNG" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2"></Image>
+            <Label Grid.Row="0" Grid.Column="1" Content="Eleven" Style="{StaticResource ResourceKey= Wtext}" FontSize="20" />
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" Content="Change" Style="{StaticResource ResourceKey= Wtext}" Background="#737373" Margin="5,0"/>
+                <Image Grid.Row="0" Grid.Column="1" Source="/2.PNG" />
+                <Label Grid.Row="0" Grid.Column="2" Content="Eleven" Foreground="#B0B2B4" FontSize="14" />
+            </Grid>
+
+
+
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="0"  >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Row="0" Grid.Column="0" Background="#3799B1" Margin="10,10,0,5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Image Source="/6.PNG" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+                <Label Grid.Row="1" Grid.Column="0" Style="{StaticResource ResourceKey= Wtext}" FontSize="15" FontWeight="Bold" Content="Point of sale" Padding="0,20,0,0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+            </Grid >
+
+            <Grid Grid.Row="0" Grid.Column="1" Background="#3799B1"  Margin="0,10,10,5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Grid.Column="0"  Background="#3799B1" Style="{StaticResource ResourceKey= Wtext}">
+                    <TextBlock TextAlignment="Left"> 0 Products<LineBreak/> 0 Visits <LineBreak/> 0 Memberships <LineBreak/> 0 Vouchers<LineBreak/> 0 Total</TextBlock>
+                </Label>
+                <Label Grid.Row="1" Grid.Column="0"  Background="#3799B1"  HorizontalAlignment="Right" Content="$0.00" FontSize="15" FontWeight="Medium"  Style="{StaticResource ResourceKey= Wtext}" Padding="0,0,5,5" />
+            </Grid >
+
+
+            <Grid Grid.Row="1" Grid.Column="0" Background="#3799B1" Margin="10,10,10,10" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                
+                <Image Source="/7.PNG" Grid.Row="0" />
+                <Label Grid.Row="1"  Style="{StaticResource ResourceKey= Wtext}" Content="Client" />
+            </Grid >
+
+            <Grid Grid.Row="1" Grid.Column="1" Background="#3799B1" Margin="10,10,10,10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Image Source="/8.PNG" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" />
+                <Label Grid.Row="1" Grid.Column="0"  Style="{StaticResource ResourceKey= Wtext}" Content="Expense" />
+            </Grid >
+            <Grid Grid.Row="2" Grid.Column="0"  Background="#3799B1" Margin="10,10,10,10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Image Source="/9.PNG" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center"/>
+                <Label Grid.Row="1" Grid.Column="0" Style="{StaticResource ResourceKey= Wtext}" Content="Restocking" />
+            </Grid >
+
+            <Grid Grid.Row="2" Grid.Column="1"  Background="#3799B1" Margin="10,10,10,10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Image Source="/10.PNG" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" />
+                <Label Grid.Row="1" Grid.Column="0" Style="{StaticResource ResourceKey= Wtext}" Content="Schedule" Margin="10,5,10,5" />
+            </Grid >
+
+            <Grid Grid.Row="3" Grid.Column="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Image Source="/11.PNG" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" Margin="10,10,5,10" />
+                <Image Source="/12.PNG" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" Margin="5,10,5,10" />
+            </Grid >
+
+            <Grid Grid.Row="3" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Image Source="/13.PNG" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" Margin="5,10,5,10" />
+                <Image Source="/14.PNG" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" Margin="10,10,10,10"/>
+            </Grid >
+
+            
+
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="1">
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            
+            <Image Grid.Column="1" Grid.Row="0" Source="/3.PNG" Grid.RowSpan="2" />
+            <Image Grid.Column="2" Grid.Row="0" Source="/4.PNG" Grid.RowSpan="2" />
+            <Label Grid.Column="3" Grid.Row="0" Content="00:00:00" Foreground="#3895AC"/>
+            <Label Grid.Column="4" Grid.Row="0" Content="GymRealm" Foreground="#B0B2B4" />
+            <Label Grid.Column="3" Grid.Row="1" Content="start" Style="{StaticResource ResourceKey= Wtext}" FontSize="13" FontWeight="Medium" Background="#737373" HorizontalContentAlignment="Center" Margin="5"/>
+            <Label Grid.Column="4" Grid.Row="1" Content="logout" Style="{StaticResource ResourceKey= Wtext}" FontSize="13" FontWeight="Medium" Background="#DA7979" HorizontalContentAlignment="Center" Margin="5"/>
+            <Image Grid.Column="5" Grid.Row="0" Source="/5.PNG" Grid.RowSpan="2" />
+        </Grid>
+
+        <Label  Grid.Row="1" Grid.Column="1" Background="#7ABACA" Margin="10"/>
+
+
+    </Grid>
+</Window>
